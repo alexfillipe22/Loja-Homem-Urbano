@@ -1,0 +1,198 @@
+body {
+    font-family: 'Lato', sans-serif; 
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #222;
+}
+
+:root {
+    --primary-color: #343a40;
+    --secondary-color: #6c757d;
+    --accent-color: #007bff;
+}
+
+#hero {
+    background: url('../img/hero-bg.png') no-repeat center center/cover;
+    min-height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#hero p.lead {
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+.btn-outline-dark {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section.bg-light {
+    background-color: #f4f4f4 !important;
+}
+
+.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+}
+
+.icon-box {
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box i {
+    color: var(--primary-color);
+}
+
+#contact form .form-label {
+    font-weight: bold;
+    color: #222;
+}
+
+footer {
+    background-color: #212529 !important;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero p.lead {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    #contact .col-lg-6 {
+        margin-bottom: 30px;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+
+    .icon-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #hero h1 {
+        font-size: 4rem;
+    }
+
+    #hero p.lead {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+html {
+    scroll-behavior: smooth;
+}
